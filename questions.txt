@@ -1,0 +1,99 @@
+///////////////////////////////////////////////////////////////////////////////
+//                   ALL STUDENTS COMPLETE THESE SECTIONS
+// Title:            PetriDish
+// Files:            questions.txt
+// Semester:         CS302 Spring 2015
+//
+// Author:          QuHarrison Terry 
+// Email:            qterry@wisc.edu
+// CS Login:         quharrison
+// Lecturer's Name:  Deb Deppler
+// Lab Section:      321
+// 
+// Pair Partner:    Xiaobo Wang
+// Email:			xwang532@wisc.edu
+// CS Login:        xiaobo
+// Lecturer's Name: Deb Deppler
+// Lab Section:     325
+//
+//////////////////// STUDENTS WHO GET HELP FROM OTHER THAN THEIR PARTNER //////
+//                   must fully acknowledge and credit those sources of help.
+//                   Instructors and TAs do not have to be credited here,
+//                   but tutors, roommates, relatives, strangers, etc do.
+//
+// Persons:          Identify persons by name, relationship to you, and email.
+//                   Describe in detail the the ideas and help they provided.
+//
+// Online sources:   avoid web searches to solve your problems, but if you do
+//                   search, be sure to include Web URLs and description of 
+//                   of any information you find.
+//////////////////////////// 80 columns wide //////////////////////////////////
+
+1¡¢What happens to the fitness scores of the Organisms in the PetriDish after 
+
+several recombinations? Explain why you think this occurs.
+
+ANSWER:
+
+They will  never change again because after enough times of
+recombinations, the sequence of the genes in organism will not change after 
+more recombinations, which contribute to the same and steady fitness scores.
+Every time the fittest offspring is found by findFittest() method and is saved
+in new array and the fittest offspring actually should combined by the same
+combination of letters, so that after several times, the strand will replaced 
+by the that combination.
+
+
+
+2.Do any of the Organism traits interfere with other traits? That is, does 
+
+having a particular trait make it more difficult to acquire others? Explain.
+
+ANSWER:
+
+Yes. For example, Motility requires more Ts, but isResistant requires a 'C'
+followed by a 'G'. (related to Q3) But as for other traits there is no obvious
+interference.
+
+
+3.Were you able to produce an Organism with a fitness score of 22 or greater? 
+
+If so, enter both strands for this organism. If not, what was the best score
+
+ you achieved and explain why an organism with a better fitness was not found.
+
+ANSWER:
+
+Nobody can have an organism whose fitness score is 22 or greater. Let's try to
+ make a dominant code. According to the Motility, More Ts mean more scores. 
+ (each T worths 2 points.) But isResistant() is 5 points which says that the  
+ dominant genetic code of the Organism contains a 'C' followed by a 'G'. 
+ Here we must lose 2*2=4 points to earn the 5 points. 
+ 
+ So the possible highest score is 21.
+For example:    AGGCT CGTTT CGTTT 3 R  P  W  21
+
+4.In genetic recombination, crossover occurs when two DNA chains exchange parts
+
+(rather than all) of their DNA strands. Briefly explain how you would implement
+ 
+  crossover for Martian organisms.
+ 
+ANSWER: We would implement crossover for Martian organisms by initializing a 
+loop to check the entire strand of DNA and exchange the duplicate parts with
+the correct combination.( or just exchange the selected part) we may use 
+a 2D array to implement crossovers.
+  
+
+5.Was it a good idea to provide a toString() method in the Organism class 
+
+instead of something like printOrganismInfo()? Why or why not?
+
+ANSWER:
+
+There is a toString() method in Organism class and it can return the required
+information of the organism. First it is quite convenient to use this toString
+method. By overriding the toString() method of the Object class, we can return 
+values of the object, so we don't need to write much code. Easier for us to
+write code. Also it is easier to read. printOrganismInfo() may work, but it is  
+not as good as toString() because it complicates the code.

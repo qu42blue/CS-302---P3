@@ -1,0 +1,59 @@
+///////////////////////////////////////////////////////////////////////////////
+//                   ALL STUDENTS COMPLETE THESE SECTIONS
+// Title:            PetriDish
+// Files:            expected_output.txt
+// Semester:         CS302 Spring 2015
+//
+// Author:          QuHarrison Terry 
+// Email:            qterry@wisc.edu
+// CS Login:         quharrison
+// Lecturer's Name:  Deb Deppler
+// Lab Section:      321
+// 
+// Pair Partner:    Xiaobo Wang
+// Email:			xwang532@wisc.edu
+// CS Login:        xiaobo
+// Lecturer's Name: Deb Deppler
+// Lab Section:     325
+//
+//////////////////// STUDENTS WHO GET HELP FROM OTHER THAN THEIR PARTNER //////
+//                   must fully acknowledge and credit those sources of help.
+//                   Instructors and TAs do not have to be credited here,
+//                   but tutors, roommates, relatives, strangers, etc do.
+//
+// Persons:          Identify persons by name, relationship to you, and email.
+//                   Describe in detail the the ideas and help they provided.
+//
+// Online sources:   avoid web searches to solve your problems, but if you do
+//                   search, be sure to include Web URLs and description of 
+//                   of any information you find.
+//////////////////////////// 80 columns wide //////////////////////////////////
+***** Testing Constructor *****
+Passed.
+***** Testing getDominant() *****
+Passed.
+***** Testing isResistant *****
+Passed.
+***** Testing getMotility *****
+Passed.
+***** Testing isPhotoSynthetic *****
+Passed.
+***** Testing hasCellWall *****
+Passed.
+***** Testing getFitness *****
+Passed.
+***** Testing toString() *****
+Passed.
+***** Testing recombine() *****
+Result of recombination: 'TGAAA TTTAA TTTAA 3 NR P  W  16'
+***** Testing mutate() *****
+Original Organism 1: 'AAACG TGAAA TGACG 1 R  P  NW 12'
+Original Organism 2: 'TTTAA TTTAA TTTAA 3 NR NP W  11'
+Mutated  Organism 1: 'TAACG AGAAA TGACG 1 R  NP NW 7'
+Mutated  Organism 2: 'TTTAA TTGAA TTTAA 3 NR NP W  11'
+Mutated  Organism 1: 'TAACT AGAAG TGACT 2 NR NP NW 4'
+Mutated  Organism 2: 'TTTAA TTAAA TTTAA 3 NR NP W  11'
+Mutated  Organism 1: 'TCACT ATAAG TTACT 3 NR NP W  11'
+Mutated  Organism 2: 'TTTAA TTTAA TTTAA 3 NR NP W  11'
+Mutated  Organism 1: 'TGACT ATAAG TTACT 3 NR NP W  11'
+Mutated  Organism 2: 'TTTAA ATTAA TTTAA 3 NR NP W  11'
